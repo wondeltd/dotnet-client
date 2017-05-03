@@ -1,0 +1,4 @@
+E:\NetProj\2017\DotNET-Client\DotNetClient\DotNetClient\bin\Release\Wonde.NET.dll
+E:\NetProj\2017\DotNET-Client\DotNetClient\DotNetClient\bin\Release\Wonde.NET.pdb
+E:\NetProj\2017\DotNET-Client\DotNetClient\DotNetClient\obj\Release\Wonde.NET.dll
+E:\NetProj\2017\DotNET-Client\DotNetClient\DotNetClient\obj\Release\Wonde.NET.pdb

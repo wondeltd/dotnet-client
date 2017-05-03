@@ -1,0 +1,8 @@
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\bin\Debug\TestWondeClient.exe.config
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\bin\Debug\TestWondeClient.exe
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\bin\Debug\TestWondeClient.pdb
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\bin\Debug\Wonde.dll
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\bin\Debug\Wonde.pdb
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\obj\Debug\TestWondeClient.exe
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\obj\Debug\TestWondeClient.pdb
+E:\NetProj\2017\DotNET-Client\DotNetClient\TestWondeClient\obj\Debug\TestWondeClient.csprojResolveAssemblyReference.cache

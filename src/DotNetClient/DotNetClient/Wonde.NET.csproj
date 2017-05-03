@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14EF1CDD-1D99-4078-AB11-1207E859C63C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wonde</RootNamespace>
+    <AssemblyName>Wonde.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wonde\Client.cs" />
+    <Compile Include="Wonde\EndPoints\AttendanceSumaries.cs" />
+    <Compile Include="Wonde\EndPoints\Achievements.cs" />
+    <Compile Include="Wonde\EndPoints\Assessment.cs" />
+    <Compile Include="Wonde\EndPoints\Assessments\Aspects.cs" />
+    <Compile Include="Wonde\EndPoints\Assessments\MarkSheets.cs" />
+    <Compile Include="Wonde\EndPoints\Assessments\Results.cs" />
+    <Compile Include="Wonde\EndPoints\Assessments\ResultSets.cs" />
+    <Compile Include="Wonde\EndPoints\Assessments\Templates.cs" />
+    <Compile Include="Wonde\EndPoints\Attendance.cs" />
+    <Compile Include="Wonde\EndPoints\AttendanceCodes.cs" />
+    <Compile Include="Wonde\EndPoints\Behaviours.cs" />
+    <Compile Include="Wonde\EndPoints\BootstrapEndpoint.cs" />
+    <Compile Include="Wonde\EndPoints\Classes.cs" />
+    <Compile Include="Wonde\EndPoints\Contacts.cs" />
+    <Compile Include="Wonde\EndPoints\Counts.cs" />
+    <Compile Include="Wonde\EndPoints\Deletions.cs" />
+    <Compile Include="Wonde\EndPoints\Employees.cs" />
+    <Compile Include="Wonde\EndPoints\Events.cs" />
+    <Compile Include="Wonde\EndPoints\Groups.cs" />
+    <Compile Include="Wonde\EndPoints\Lessons.cs" />
+    <Compile Include="Wonde\EndPoints\LessonAttendance.cs" />
+    <Compile Include="Wonde\EndPoints\MedicalConditions.cs" />
+    <Compile Include="Wonde\EndPoints\MedicalNotes.cs" />
+    <Compile Include="Wonde\EndPoints\MedicalEvents.cs" />
+    <Compile Include="Wonde\EndPoints\Periods.cs" />
+    <Compile Include="Wonde\EndPoints\Photos.cs" />
+    <Compile Include="Wonde\EndPoints\Rooms.cs" />
+    <Compile Include="Wonde\EndPoints\Schools.cs" />
+    <Compile Include="Wonde\EndPoints\Students.cs" />
+    <Compile Include="Wonde\EndPoints\Subjects.cs" />
+    <Compile Include="Wonde\Exceptions\InvalidStudentsBehavioursException.cs" />
+    <Compile Include="Wonde\Exceptions\InvalidStudentsAchievementsException.cs" />
+    <Compile Include="Wonde\Exceptions\ValidationErrorException.cs" />
+    <Compile Include="Wonde\Exceptions\InvalidTokenException.cs" />
+    <Compile Include="Wonde\Helpers\JsonSerializeHelper.cs" />
+    <Compile Include="Wonde\Helpers\RestClient.cs" />
+    <Compile Include="Wonde\Helpers\Exceptions\RestClientException.cs" />
+    <Compile Include="Wonde\ResultIterator.cs" />
+    <Compile Include="Wonde\Exceptions\InvalidLessonAttendanceException.cs" />
+    <Compile Include="Wonde\Exceptions\InvalidSessionAttendanceException.cs" />
+    <Compile Include="Wonde\WriteBack\LessionAttendanceRecord.cs" />
+    <Compile Include="Wonde\WriteBack\LessonRegister.cs" />
+    <Compile Include="Wonde\WriteBack\SessionAttendanceRecord.cs" />
+    <Compile Include="Wonde\WriteBack\SessionRegister.cs" />
+    <Compile Include="Wonde\WriteBack\StudentsAchievementRecord.cs" />
+    <Compile Include="Wonde\WriteBack\StudentsAchievements.cs" />
+    <Compile Include="Wonde\WriteBack\StudentsBehaviourRecord.cs" />
+    <Compile Include="Wonde\WriteBack\StudentsBehaviours.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
