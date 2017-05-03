@@ -8,7 +8,7 @@ Target .Net Framework 4.6.1
 Using Nuget:
 
 ```Nuget Package Manager Console
-Not yet added to Nuget.org
+Install-Package Wonde.NET
 ```
 
 ## Endpoints
