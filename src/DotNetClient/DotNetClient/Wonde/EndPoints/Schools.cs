@@ -188,7 +188,6 @@ namespace Wonde.EndPoints
         /// <returns>Object data of the single resource</returns>
         public new object get(string id, string[] includes = null, Dictionary<string, string> parameters = null)
         {
-            ExtendedUri = "schools/";
             return base.get(id, includes, parameters);
         }
 
