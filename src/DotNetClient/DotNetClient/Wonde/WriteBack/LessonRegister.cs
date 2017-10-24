@@ -9,14 +9,14 @@ namespace Wonde.WriteBack
         /// <summary>
         /// Attendance array list
         /// </summary>
-        public List<LessionAttendanceRecord> attendances;
+        public List<LessionAttendanceRecord> attendance;
 
         /// <summary>
         /// LessionRegister constructor
         /// </summary>
         public LessonRegister()
         {
-            attendances = new List<LessionAttendanceRecord>();
+            attendance = new List<LessionAttendanceRecord>();
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace Wonde.WriteBack
             if (!lessionAttendance.isValid())
                 throw new InvalidLessonAttendanceException("Attendance has empty fields.");
 
-            attendances.Add(lessionAttendance);
+            attendance.Add(lessionAttendance);
         }
     }
 }
