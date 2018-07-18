@@ -102,6 +102,11 @@ namespace Wonde.EndPoints
         public Students students;
 
         /// <summary>
+        /// Object of PreAdmissions
+        /// </summary>
+        public PreAdmissions preadmissions;
+
+        /// <summary>
         /// Object of Assessment
         /// </summary>
         public Assessment assessment;
@@ -151,6 +156,7 @@ namespace Wonde.EndPoints
                 rooms = new Rooms(token, Uri);
                 students = new Students(token, Uri);
                 subjects = new Subjects(token, Uri);
+                preadmissions = new PreAdmissions(token, Uri);
             }
 
         }
@@ -188,9 +194,10 @@ namespace Wonde.EndPoints
         /// <returns>Object data of the single resource</returns>
         public new object get(string id, string[] includes = null, Dictionary<string, string> parameters = null)
         {
+            ExtendedUri = "schools/";
             return base.get(id, includes, parameters);
         }
 
-        
+
     }
 }

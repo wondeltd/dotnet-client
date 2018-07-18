@@ -73,6 +73,7 @@
     <Compile Include="Wonde\EndPoints\MedicalEvents.cs" />
     <Compile Include="Wonde\EndPoints\Periods.cs" />
     <Compile Include="Wonde\EndPoints\Photos.cs" />
+    <Compile Include="Wonde\EndPoints\PreAdmissions.cs" />
     <Compile Include="Wonde\EndPoints\Rooms.cs" />
     <Compile Include="Wonde\EndPoints\Schools.cs" />
     <Compile Include="Wonde\EndPoints\Students.cs" />
