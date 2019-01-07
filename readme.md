@@ -841,7 +841,7 @@ var school = client.school("SCHOOL_ID_GOES_HERE");
 
 // Get photos
 foreach (Dictionary<string, object> photo in school.photos.all()) {
-    Console.WriteLine("Photo Hash: {0}", photo["hash"]);
+    Console.WriteLine("Photo Hash: {0}", photo["content"]);
 }
 ```
 VB.Net
@@ -852,7 +852,7 @@ Dim school = client.school("SCHOOL_ID_GOES_HERE")
 
 ' Get photos
 For Each photo As Dictionary(Of String, Object) In school.photos.all()
-	Console.WriteLine("Photo Hash: {0}", photo("hash"))
+	Console.WriteLine("Photo Hash: {0}", photo("content"))
 Next photo
 ```
 

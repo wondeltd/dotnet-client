@@ -22,6 +22,7 @@ namespace Wonde.Helpers
         internal static Dictionary<string, object> getJsonAsDictionary(string jsonString)
         {
             JavaScriptSerializer ser = new JavaScriptSerializer();
+            ser.MaxJsonLength = Int32.MaxValue;
             if (jsonString.Trim().Length == 0)
                 return null;
             return ser.Deserialize<Dictionary<string, object>>(jsonString);
@@ -35,6 +36,7 @@ namespace Wonde.Helpers
         internal static string formatObjectAsJson(object arrayObj)
         {
             JavaScriptSerializer ser = new JavaScriptSerializer();
+            ser.MaxJsonLength = Int32.MaxValue;
             if (arrayObj == null)
                 return "{}";
 
