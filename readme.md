@@ -841,7 +841,7 @@ var school = client.school("SCHOOL_ID_GOES_HERE");
 
 // Get photos
 foreach (Dictionary<string, object> photo in school.photos.all()) {
-    Console.WriteLine("Photo Hash: {0}", photo["hash"]);
+    Console.WriteLine("Photo Hash: {0}", photo["content"]);
 }
 ```
 VB.Net
@@ -852,7 +852,7 @@ Dim school = client.school("SCHOOL_ID_GOES_HERE")
 
 ' Get photos
 For Each photo As Dictionary(Of String, Object) In school.photos.all()
-	Console.WriteLine("Photo Hash: {0}", photo("hash"))
+	Console.WriteLine("Photo Hash: {0}", photo("content"))
 Next photo
 ```
 
@@ -903,4 +903,60 @@ For Each subject As Dictionary(Of String, Object) In school.subjects.all()
 	Console.WriteLine("Subject Name: {0}", subject("name"))
 Next subject
 ```
+
+### Writebacks
+C#
+```C#
+var client = new Wonde.Client("TOKEN_GOES_HERE");
+
+// Get single writeback
+var writebacks = client.writebacks.get("WRITEBACK_ID");
+
+// Get writebacks
+foreach (Dictionary<string, object> writebacks in client.writebacks.all()) {
+    Console.WriteLine("Subject Name: {0}", subject["name"]);
+}
+```
+
+### Doctors
+C#
+```C#
+var client = new Wonde.Client("TOKEN_GOES_HERE");
+
+var school = client.school("SCHOOL_ID_GOES_HERE");
+
+// Get doctors
+foreach (Dictionary<string, object> doctor in school.doctors.all())
+{
+	Console.WriteLine("Doctor {0} {1}", doctor["forename"], doctor["surname"]);
+}
+```
+
+### Employee Absences
+C#
+```C#
+var client = new Wonde.Client("TOKEN_GOES_HERE");
+
+var school = client.school("SCHOOL_ID_GOES_HERE");
+
+// Get absences
+foreach (Dictionary<string, object> absence in school.employeeAbsences.all())
+{
+	Console.WriteLine("Absence Id {0}", absence["id"]);
+}
+```
+
+### Exclusions
+C#
+```C#
+var client = new Wonde.Client("TOKEN_GOES_HERE");
+
+var school = client.school("SCHOOL_ID_GOES_HERE");
+
+// Get absences
+foreach (Dictionary<string, object> absence in school.exclusions.all())
+{
+	Console.WriteLine("Exclusion Id {0}", exclusions["id"]);
+}
+
 This Readme file is not yet completed.
