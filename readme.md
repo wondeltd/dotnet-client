@@ -958,5 +958,22 @@ foreach (Dictionary<string, object> absence in school.exclusions.all())
 {
 	Console.WriteLine("Exclusion Id {0}", exclusions["id"]);
 }
+```
+
+### Pre Admission
+C#
+```C#
+var client = new Wonde.Client("TOKEN_GOES_HERE");
+
+var school = client.school("SCHOOL_ID_GOES_HERE");
+
+// Get absences
+foreach (Dictionary<string, object> student in school.PreAdmissionStudents.all())
+{
+	Console.WriteLine("Student Id {0}", student["id"]);
+}
+```
+
+
 
 This Readme file is not yet completed.
