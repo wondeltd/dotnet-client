@@ -33,7 +33,11 @@ namespace Wonde
         /// </summary>
         public Schools schools { get; set; }
 
-        
+        /// <summary>
+        /// Gets writebacks
+        /// </summary>
+        public Writebacks writebacks { get; set; }
+
         /// <summary>
         /// Create object through constructor
         /// </summary>
@@ -47,6 +51,7 @@ namespace Wonde
 
             _token = token;
             schools = new Schools(token);
+            writebacks = new Writebacks(token);
             attendanceCodes = new AttendanceCodes(token);
         }
 
@@ -83,6 +88,5 @@ namespace Wonde
 
             return (new BootstrapEndpoint(_token, uri)).delete("");
         }
-
     }
 }

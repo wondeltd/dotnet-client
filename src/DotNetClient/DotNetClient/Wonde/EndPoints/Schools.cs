@@ -47,9 +47,25 @@ namespace Wonde.EndPoints
         public Counts counts;
 
         /// <summary>
+        /// Object of Doctors
+        /// </summary>
+        public Doctors doctors;
+
+
+        /// <summary>
         /// Object of Employees
         /// </summary>
         public Employees employees;
+
+        /// <summary>
+        /// Object of Employee Absences
+        /// </summary>
+        public EmployeeAbsences employeeAbsences;
+
+        /// <summary>
+        /// Object of Employees
+        /// </summary>
+        public Exclusions exclusions;
 
         /// <summary>
         /// Object of Groups
@@ -85,6 +101,11 @@ namespace Wonde.EndPoints
         /// Object of Photos
         /// </summary>
         public Photos photos;
+
+        /// <summary>
+        /// Object of Pre Admission Students
+        /// </summary>
+        public PreAdmissionStudents preAdmissionStudents;
 
         /// <summary>
         /// Object of Rooms
@@ -139,8 +160,11 @@ namespace Wonde.EndPoints
                 contacts = new Contacts(token, Uri);
                 counts = new Counts(token, Uri);
                 deletions = new Deletions(token, Uri);
+                doctors = new Doctors(token, Uri);
+                employeeAbsences = new EmployeeAbsences(token, Uri);
                 employees = new Employees(token, Uri);
                 events = new Events(token, Uri);
+                exclusions = new Exclusions(token, Uri);
                 groups = new Groups(token, Uri);
                 lessons = new Lessons(token, Uri);
                 lessonAttendance = new LessonAttendance(token, Uri);
@@ -148,6 +172,7 @@ namespace Wonde.EndPoints
                 medicalEvents = new MedicalEvents(token, Uri);
                 periods = new Periods(token, Uri);
                 photos = new Photos(token, Uri);
+                preAdmissionStudents = new PreAdmissionStudents(token, Uri);
                 rooms = new Rooms(token, Uri);
                 students = new Students(token, Uri);
                 subjects = new Subjects(token, Uri);
