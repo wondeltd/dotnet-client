@@ -1,2 +1,6 @@
 nuget
 change_log.txt
+src/DotNetClient/DotNetClient/bin
+src/DotNetClient/DotNetClient/obj
+src/DotNetClient/TestWondeClient/bin
+src/DotNetClient/TestWondeClient/obj

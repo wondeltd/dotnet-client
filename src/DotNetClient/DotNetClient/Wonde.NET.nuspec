@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Wonde.NET</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <title>Wonde.NET</title>
     <authors>Wonde</authors>
     <owners>Wonde Ltd</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.wonde.com/favicon.ico</iconUrl>
     <description>.Net Library to consume Wonde REST Api</description>
-    <releaseNotes>Bugfix: Lesson attendance writebacks failing validation.</releaseNotes>
-    <copyright>Copyright 2017</copyright>
+    <releaseNotes>Added more API endpoints and support for large photos.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
     <tags>Wonde API</tags>
     <dependencies />
     <projectUrl>http://wonde.com</projectUrl>
