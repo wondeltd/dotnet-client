@@ -144,6 +144,17 @@ namespace Wonde.EndPoints
         /// <param name="url">School id if any</param>
         public Schools(string token, string id = "") : base(token, "schools/")
         {
+            // this method gets called twice.
+            if (id != "")
+            {
+                var school = (Dictionary<string, object>) get(id);
+                var region = (Dictionary<string, object>)school["region"];
+
+                var domain = region["domain"].ToString();
+
+                // sets BootstrapEndpoint URL
+                Endpoint = domain;
+            }
             _token = token;
             if (id.Trim().Length > 0)
             {

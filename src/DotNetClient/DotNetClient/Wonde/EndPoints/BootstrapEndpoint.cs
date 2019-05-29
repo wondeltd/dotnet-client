@@ -23,7 +23,18 @@ namespace Wonde.EndPoints
         /// <summary>
         /// The endpoint uri for accessing the wonde api
         /// </summary>
-        const string ENDPOINT = "https://api.wonde.com/v1.0/";
+        ///
+        /// Initial endpoint to access school 
+        protected string ENDPOINT = "https://api.wonde.com/v1.0/";
+
+        public string Endpoint
+        {
+            get { return ENDPOINT; }
+            set
+            {
+                ENDPOINT = "https://" + value + "/v1.0/";
+            }
+        }
 
         //TODO:Write the body
         /// <summary>
