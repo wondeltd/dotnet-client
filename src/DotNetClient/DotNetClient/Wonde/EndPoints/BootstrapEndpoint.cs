@@ -25,7 +25,7 @@ namespace Wonde.EndPoints
         /// </summary>
         ///
         /// Initial endpoint to access school 
-        protected string ENDPOINT = "https://api.wonde.com/v1.0/";
+        protected static string ENDPOINT = "https://api.wonde.com/v1.0/";
 
         public string Endpoint
         {
