@@ -43,7 +43,7 @@ Dim client as New Wonde.Client("TOKEN_GOES_HERE")
 ' Loop through the schools your account has access to
 For Each school as Dictionary(of String, Object) in client.schools.all()
 	' Display school name
-	Console.WriteLine("School's name is {0}, school("name"))
+	Console.WriteLine("School's name is {0}", school("name"))
 Next school
 
 ```
@@ -437,7 +437,7 @@ C#
 var client = new Wonde.Client("TOKEN_GOES_HERE");
 
 // Get attendance codes
-foreach (Dictionary<string, object> attendanceCode in client.AttendanceCodes.all()) {
+foreach (Dictionary<string, object> attendanceCode in client.attendanceCodes.all()) {
     Console.WriteLine("Attendance Code: {0}", attendanceCode["code"]);
 }
 ```
