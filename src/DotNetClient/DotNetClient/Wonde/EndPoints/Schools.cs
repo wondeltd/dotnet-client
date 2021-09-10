@@ -138,6 +138,11 @@ namespace Wonde.EndPoints
         public Events events;
 
         /// <summary>
+        /// Object of Students Leaver
+        /// </summary>
+        public StudentsLeaver studentsLeaver;
+
+        /// <summary>
         /// Constructor 
         /// </summary>
         /// <param name="token">Api Token</param>
@@ -187,6 +192,7 @@ namespace Wonde.EndPoints
                 rooms = new Rooms(token, Uri);
                 students = new Students(token, Uri);
                 subjects = new Subjects(token, Uri);
+                studentsLeaver = new StudentsLeaver(token, Uri);
             }
 
         }
